@@ -11,7 +11,7 @@ const URL = `https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY`
 function App() {
   const [myData, setMyData] = useState()
   useEffect(() => {
-    function getPhoto(){
+    function getPhoto(){  //call getPhoto when ready to send requests
       axios.get(URL)
       .then(res => {
         console.log(res.data)
